@@ -1,0 +1,118 @@
+# ------------------------
+# OS / Editor cruft
+# ------------------------
+.DS_Store
+Thumbs.db
+
+
+# IDE settings
+.vscode/
+.idea/
+*.iml
+
+# ------------------------
+# Python bytecode & caches
+# ------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*$py.class
+
+# ------------------------
+# Virtual environments
+# ------------------------
+.venv/
+venv/
+.env/
+env/
+ENV/
+pip-wheel-metadata/
+
+# ------------------------
+# Packaging / builds
+# ------------------------
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+
+# ------------------------
+# Test & coverage artifacts
+# ------------------------
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# ------------------------
+# Jupyter
+# ------------------------
+.ipynb_checkpoints/
+.ipython/
+
+# ------------------------
+# Flask specifics
+# ------------------------
+# Instance folder often holds secrets/config/uploads at runtime
+instance/
+uploads/
+*.db
+*.sqlite
+*.sqlite3
+site.db
+
+# Environment files (keep secrets out of git)
+*.env
+.env.*
+.flaskenv
+
+# Gunicorn / runtime logs (if any)
+*.log
+*.pid
+
+# ------------------------
+# Data & model artifacts
+# ------------------------
+# Keep the folder, ignore its contents (use .gitkeep if you want the empty dir)
+models/**
+!models/.gitkeep
+# Common serialized model formats
+*.pkl
+*.joblib
+*.sav
+*.h5
+
+# Large/raw data
+data/**
+datasets/**
+!data/README.md
+!datasets/README.md
+
+# NLTK downloads (if stored locally in project)
+nltk_data/
+# Misc caches
+.cache/
+cache/
+joblib_cache/
+__cache__/
+# Reports/figures/outputs generated during analysis
+reports/
+figures/
+outputs/
+
+# ------------------------
+# Node (only if you have a frontend subdir; safe to keep)
+# ------------------------
+node_modules/
+*.tsbuildinfo
+
+
+docker-compose.override.yml
+
+gcloud-config/
+.gcloudignore
