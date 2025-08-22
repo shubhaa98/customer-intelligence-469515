@@ -1,0 +1,68 @@
+sample requests
+
+
+1. FORECAST
+
+{"model_type":"forecast",
+"past_sales":[
+  2025,           # year
+  34,             # weekofyear
+  540.75,         # total_value
+  0.6,            # sentiment
+  1,              # category_Furniture
+  0,              # category_Office Supplies
+  0,              # region_North
+  1,              # region_South
+  0,              # region_West
+  0,              # segment_Corporate
+  1               # segment_Small Business
+]
+}
+
+
+
+
+2. CHURN
+
+{ "model_type":"churn",
+  "features": [
+    1432.50,      // total_spend
+    45,           // total_quantity
+    95.50,        // avg_order_value
+    2.5,          // avg_items_per_purchase
+    18.2,         // avg_recency_days
+    12,           // days_since_last_purchase
+    180,          // time_between_first_last_purchase
+    0.25,         // order_variability
+    2.1,          // purchases_per_month
+    10,           // product_diversity
+    3,            // category_diversity
+    0.65,         // seasonal_purchase_ratio
+    0.2,          // avg_sentiment_score
+    2,            // negative_feedback_count
+    0.18,         // purchase_trend
+    5600,         // CLV_estimate
+    29,           // age
+    24            // tenure_months
+  ]
+}
+
+
+
+3. CLUSTERING
+
+{
+  "model_type": "segment",
+  "features": [
+3, #pca1
+3, #pca2
+3   #pca3   
+  ]
+}
+
+
+4. SENTIMENT
+
+
+{"model_type":"sentiment",
+"text":"good product quality and service"}
