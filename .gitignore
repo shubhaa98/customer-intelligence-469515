@@ -87,11 +87,7 @@ models/**
 *.sav
 *.h5
 
-# Large/raw data
-data/**
-datasets/**
-!data/README.md
-!datasets/README.md
+
 
 # NLTK downloads (if stored locally in project)
 nltk_data/
